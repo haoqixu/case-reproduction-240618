@@ -123,6 +123,9 @@ hey -n 50000000000000 -q 100 -c 900 http://127.0.0.1:8080/hello
 sum(rate(redis_commands_total{} [1m])) by (instance)
 ```
 
+![qps](./qps.jpg)
+
 ```promql
 sum(redis_connected_clients{}) by (instance)
 ```
+![qps](./connections.jpg)
